@@ -147,7 +147,7 @@ public class MyCareer
 			else if(hairType.equals("7"))
 				{
 					System.out.println(" ");
-					System.out.println(" what would you like your hair type to be ?");
+					System.out.println(" What would you like your hair type to be ?");
 					Scanner userInput2= new Scanner(System.in);
 					String otherHairType = userInput.nextLine();
 					System.out.println(otherHairType + "is a good choice");
@@ -160,7 +160,7 @@ public class MyCareer
 		public static void choseEyeColor()
 			{
 				Scanner userInput= new Scanner(System.in);
-				System.out.println("now for your eye color");
+				System.out.println("Now for your eye color");
 				System.out.println("Here are your Choices");
 				System.out.println(Database.eyeColor);
 				String eyeColor = userInput.nextLine();
