@@ -41,7 +41,7 @@ public class MyCareer
 				start();
 				playingB();
 				playingFQ();
-				playingFO();
+				
 				
 				
 			
@@ -545,7 +545,7 @@ public class MyCareer
 							String starsGame1 = userInput7.nextLine();
 							if (starsGame1.equals("1"))
 							{
-								System.out.println(" you have a great game with 20 points 7 rebounds and 8 assists");
+								System.out.println(" you have a great game with 20 points 7 rebounds and 6 assists");
 								Scanner userInput8= new Scanner(System.in);
 								System.out.println(" after the game you go to a press confrence and they ask you what you will do to imporve");
 								System.out.println(" you respond");
@@ -702,14 +702,7 @@ public class MyCareer
 					}
 				}
 			}
-					
-		
 				
-		
-		public static void playingFO()
-		{
-			
-		}
 		
 		
 		

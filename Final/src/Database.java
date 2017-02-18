@@ -197,7 +197,7 @@ public class Database
 		{
 			contract.add("4 years 60 million ");
 			contract.add("2 years 20 million ");
-			contract.add("1 years 5 million ");
+			contract.add("1 years 10 million ");
 		}
 		
 		public static void myHouse()
