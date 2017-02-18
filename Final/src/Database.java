@@ -14,6 +14,11 @@ public class Database
 		static ArrayList<String> basketballTeam = new ArrayList <String>();
 		static ArrayList<String> footballTeam = new ArrayList <String>();
 		static ArrayList<String> baseballTeam = new ArrayList <String>();
+		static ArrayList<String> house = new ArrayList <String>();
+		static ArrayList<String> contract = new ArrayList <String>();
+		static ArrayList<String> standings = new ArrayList <String>();
+		static ArrayList<String> end = new ArrayList <String>();
+		
 		public static void color()
 		{
 			hairColor.add("1.Brown");
@@ -188,6 +193,37 @@ public class Database
 			
 		}
 
+		public static void myContract()
+		{
+			contract.add("4 years 60 million ");
+			contract.add("2 years 20 million ");
+			contract.add("1 years 5 million ");
+		}
+		
+		public static void myHouse()
+		{
+			house.add("1.Mansion ");
+			house.add("2.Penthouse ");
+			house.add("3.Apartment ");
+			house.add("4.Condo ");
+		
+		}
+		
+		public static void myStandings()
+		{
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+			standings.add(" ");
+		}
+		public static void myEnd()
+		{
+			
+		}
 		
 
 	}

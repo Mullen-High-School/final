@@ -5,9 +5,10 @@ public class MyCareer
 		static String name;
 		static String age;
 		static String birthday; 
-	
 		static String height;
 		static String weight;
+		static String sportChoice;
+		static int myOveral;
 		static String basketballPosition;
 		static String footballPosition;
 		static String baseballPosition;
@@ -34,6 +35,13 @@ public class MyCareer
 				Database.fTeam();
 				Database.bbTeam();
 				choseSport();
+				Database.myHouse();
+				Database.myContract();
+				contract();
+				start();
+				playingB();
+				playingFQ();
+				playingFO();
 				
 				
 			
@@ -56,7 +64,7 @@ public class MyCareer
 		public static void setAge()
 		{
 			Scanner userInput= new Scanner(System.in);
-			System.out.println(" Now lets get your players Age ");
+			System.out.println(" lets get your players Age ");
 			age = userInput.nextLine();
 			Scanner userInput2= new Scanner(System.in);
 			System.out.println(" Now lets get your  players birthday for example August 20, 1990");
@@ -136,7 +144,7 @@ public class MyCareer
 				}
 	
 	
-			else if (hairType.equals("7"))
+			else if(hairType.equals("7"))
 				{
 					System.out.println(" ");
 					System.out.println(" what would you like your hair type to be ?");
@@ -144,12 +152,7 @@ public class MyCareer
 					String otherHairType = userInput.nextLine();
 					System.out.println(otherHairType + "is a good choice");
 				}
-				else
-					{
-						System.out.println(" ");
-						System.out.println("good choice ");
-						
-					}
+				
 			System.out.println(" ");
 		}
 		
@@ -256,7 +259,8 @@ public class MyCareer
 						System.out.println(" ");
 						
 						
-						System.out.println(" your overall is " + ( speed + strength + jump + awareness + agility + acceleration + elusiveness + vision)/ 8);
+						myOveral = (( speed + strength + jump + awareness + agility + acceleration + elusiveness + vision));
+						System.out.println(" your overal is " + (myOveral/8));
 					}
 		
 		
@@ -267,7 +271,7 @@ public class MyCareer
 			System.out.println(" Now lets chose what sport you want to play");
 			System.out.println(Database.sport);
 			System.out.println(" ");
-			String sportChoice = userInput.nextLine();
+			sportChoice = userInput.nextLine();
 			if (sportChoice.equals("1"))
 						{
 							Scanner userInput2= new Scanner(System.in);
@@ -301,220 +305,8 @@ public class MyCareer
 							System.out.println(" Now lets get a team!");
 							String draftB = (" With the "+  Math.random()* 8 +1 + " pick in the nba draft the " + Database.basketballTeam.get(1) + "select " + name);
 							System.out.println(draftB);
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							//carrer
-							
-							Scanner userInput5= new Scanner(System.in);
-							System.out.println(" now for the rest of your carrer");
-							System.out.println(" your coach asks you to go to camp what do you do");
-							System.out.println(" 1. go to the camp ");
-							System.out.println("2. tell your coach your going to the camp but dont");
-							System.out.println(" 3. tell your coach you dont want to go");
-							System.out.println("4. walk out");
-							String camp = userInput5.nextLine();
-							if (camp.equals("1"))
-								{
-									Scanner userInput7= new Scanner(System.in);
-									System.out.println(" your coach makes you a starter");
-									System.out.println(" you start off the game and the first thing you do is touch the ball");
-									System.out.println(" you can either");
-									System.out.println("1. dribble to the hoop and score");
-									System.out.println("2. pass the ball");
-									System.out.println("3. dribble to midcourt and start the play");
-									String starterGame = userInput7.nextLine();
-									if (starterGame.equals("1"))
-										{
-											System.out.println(" you had a great game you scored 25 points had 5 assists and 8 rebounds your the next big thing");
-											Scanner userInput8= new Scanner(System.in);
-											System.out.println(" you have played a bunch of games and are ding well ");
-											System.out.println(" you are offered a promotion with");
-											System.out.println("1. nike");
-											System.out.println("2. jordan");
-											System.out.println("3. adidas");
-											String nextBigThing = userInput8.nextLine();
-											if (nextBigThing.equals ("1")) 
-												{
-													System.out.println(" Nike offers you a 10 year contract and you get your own shoe");
-													System.out.println(" you have made it through the season and your selcted for the rising stars game ");
-													Scanner userInput9= new Scanner(System.in);
-													System.out.println(" you start ");
-													System.out.println(" you start off the game with");
-													System.out.println("1. shot");
-													System.out.println("2. pass");
-													System.out.println("3. nothing");
-													String starsGame = userInput9.nextLine();
-													if (starsGame.equals("1"))
-													{
-														Scanner userInput10= new Scanner(System.in);
-														System.out.println(" you become the rising stars MVP");
-														System.out.println(" after the rising stars game you have a interview with the press they ask you what your going to do to get better");
-														System.out.println(" you say ");
-														System.out.println(" 1. nothing im already the best ");
-														System.out.println("2. Everything that I can to improve");
-														System.out.println(" 3. I guess something ");
-														String response = userInput10.nextLine();
-														if (response.equals("2"))
-															{
-																System.out.println(" you have a long and succsesful carrer you get inducted into the hall of fame and become the all time scoring leader");
-															}
-														else if (response.equals("3"))
-															{
-																System.out.println(" you have a long carrer you are known around the leauge and your jersey is retired with your team");
-															}
-														else 
-															{
-																System.out.println(" you had an okay carrer selcted to all stars game a few times and known as a solid player within your community ");
-															}
-													}
-													else if (starsGame.equals ("2"))
-														{
-															Scanner userInput11= new Scanner(System.in);
-															System.out.println(" you had a great game");
-															System.out.println(" after the rising stars game you have a interview with the press they ask you what your going to do to get better");
-															System.out.println(" you say ");
-															System.out.println(" 1. nothing im already the best ");
-															System.out.println("2. Everything that I can to improve");
-															System.out.println(" 3. I guess something ");
-															String response = userInput11.nextLine();
-															if (response.equals("2"))
-																{
-																	System.out.println(" you have a long carrer you are known around the leauge and your jersey is retired with your team");
-																}
-															else if (response.equals("3"))
-																{
-																	System.out.println(" you have a long carrer you are known around the leauge");
-																}
-															else 
-																{
-																	System.out.println(" you had an okay carrer you are known as a solid player within your community ");
-																}
-														}
-													else
-														{
-															
-															Scanner userInput11= new Scanner(System.in);
-															System.out.println(" you had a okay game");
-															System.out.println(" after the rising stars game you have a interview with the press they ask you what your going to do to get better");
-															System.out.println(" you say ");
-															System.out.println(" 1. nothing im already the best ");
-															System.out.println("2. Everything that I can to improve");
-															System.out.println(" 3. I guess something ");
-															String response = userInput11.nextLine();
-															if (response.equals("2"))
-																{
-																	System.out.println(" you have a long carrer you are known around the leauge");
-																}
-															else if (response.equals("3"))
-																{
-																	System.out.println(" you have a short carrer but you are known around the leauge");
-																}
-															else 
-																{
-																	System.out.println(" you had an okay carrer you are known as a solid 6th man ");
-																}
-														
-														}
-												}
-											else if (nextBigThing.equals ("2"))
-												{
-													System.out.println("jordan offers you a 10 year contract and you get your own shoe");
-													System.out.println(" you have made it through the season and your selcted for the rising stars game ");
-													System.out.println(" ");
-													
-												}
-											else
-											{
-												System.out.println(" adidias offers you a 10 year contract and you get your own shoe");
-												System.out.println(" you have made it through the season and your selcted for the rising stars game ");
-												
-											}
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-											
-										}
-									else if (starterGame.equals("2"))
-										{
-											System.out.println(" you has a bad agme 3 points 1 assist and 1 rebound coach makes you the 6th man");
-										}
-									else 
-										{
-										   System.out.println(" you had an okay game you had 14 points 3 assists and 5 rebounds you are a solid starter");
-										}
-									
-								}
-							else if (camp.equals("2"))
-								{
-									Scanner userInput6= new Scanner(System.in);
-									System.out.println(" your coach benches you");
-									System.out.println(" ");
-									System.out.println(" your first game you only played a total of 2 min you have the ball 3 seconds left your tied what do you do");
-									System.out.println("1. take the shot");
-									System.out.println("2.pass the ball");
-									String benchGame = userInput6.nextLine();
-									if (benchGame.equals("1"))
-										{
-											System.out.println(" you missed and coach benches you again");
-										}
-									else 
-										{
-											System.out.println(" you pass to your teamate and he makes it you win and coach thanks you");
-										}
-									
-									
-									
-								}
-							else if (camp.equals("3"))
-								{
-									System.out.println("Your coach trades you");
-									System.out.println(" you are now a part of the" + Database.basketballTeam.get(2));
-									
-								}
-							else
-								{
-									System.out.println(" Why such a short carrer");
-								}
-							
-								
-							
-							
 						}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+							
 			
 			
 			
@@ -622,16 +414,319 @@ public class MyCareer
 					
 				}
 					
+		}
+		public static void contract()
+		{
+			Scanner userInput1= new Scanner(System.in);
+			System.out.println("now for your contract the team that slelected you offers you");
+			System.out.println(Database.contract.get(2));
+			System.out.println(" do you 1.accept or 2.decline");
+			String contracts = userInput1.nextLine();
+			if (contracts.equals ("1"))
+			{
+				System.out.println("Congrats!");
+			}
+			else
+			{
+				Scanner userInput2= new Scanner(System.in);
+				System.out.println(" okay now they offer you");
+				System.out.println(Database.contract.get(1));
+				System.out.println(" do you 1. accept 2. get the first comtract");
+				String contracts1 = userInput1.nextLine();
+				if (contracts1.equals("1"))
+				{
+					System.out.println("Congrats!");
+				}
+				else
+				{
+					System.out.println(Database.contract.get(2));
+					System.out.println("That is your contract congrats!");
+				}
+				
+			}
+		}
 		
+		
+		
+		public static void start()
+		{
+			Scanner userInput1= new Scanner(System.in);
+				System.out.println(" Now you get to pick out your house here are your choices");
+				System.out.println(Database.house);
+				String house = userInput1.nextLine();
+				if(house.equals("1"))
+				{
+					System.out.println("You have bought a mansion in your home town");
+				}
+				else if (house.equals("2"))
+				{
+					System.out.println(" you have bought a penthouse in your home town");
+				}
+				else if (house.equals("3"))
+				{
+					System.out.println(" you have bought an apartment in your home town");
+				}
+				else 
+				{
+					System.out.println(" you have bought a condo in your home town");
+				}
+			}
+		
+		public static void playingB()
+		{
 			
+			if (sportChoice.equals(1))
+				System.out.println(" Now for you playing time");
+				System.out.println(" its your first game you get in with a couple seconds left in the game your tied the ball comes to you  you shoot and you make it");
+					Scanner userInput1= new Scanner(System.in);
+					System.out.println(" you coach asks you to go to a camp you respond");
+					System.out.println("1.why im already the best");
+					System.out.println("2.Yes sir");
+					String camp = userInput1.nextLine();
+					if (camp.equals("1"))
+					{
+						Scanner userInput3= new Scanner(System.in);
+						System.out.println(" Your coach benches you");
+						System.out.println("its the stars game you have been selected for reserves");
+						System.out.println(" your in the game you can either");
+						System.out.println("1.PLay selfish ball");
+						System.out.println("2.play conservative ball");
+						String starsGame = userInput3.nextLine();
+						if (starsGame.equals("1"))
+						{
+							System.out.println(" you have a okay game with 12 points 7 rebounds and 8 assists");
+							Scanner userInput4= new Scanner(System.in);
+							System.out.println(" after the game you go to a press confrence and they ask you what you will do to imporve");
+							System.out.println(" you respond");
+							System.out.println("1. Nothing");
+							System.out.println("2.everything I can");
+							String response = userInput4.nextLine();
+							if (response.equals("1"))
+							{
+								System.out.println(" you have a great carrer that lasts 15 years");
+							}
+							else 
+							{
+								System.out.println(" you become an great player and your jersey is retires");
+							}
+							
+						}
+						else if (starsGame.equals("2"))
+						{
+							System.out.println(" you have a great game with 17 points 7 rebounds and 8 assists");
+							Scanner userInput6= new Scanner(System.in);
+							System.out.println(" after the game you go to a press confrence and they ask you what you will do to imporve");
+							System.out.println(" you respond");
+							System.out.println("1. Nothing");
+							System.out.println("2.everything I can");
+							String response1 = userInput6.nextLine();
+							if (response1.equals("1"))
+							{
+								System.out.println(" you have a great carrer and your jersey is retired");
+							}
+							else 
+							{
+								System.out.println(" you become an amazing player, you are inducted into the hall of fame and break the all time scoring record ");
+							}
+							
+						}
+					
+					}
+
+					
+						else if (camp.equals("2"))
+						{
+							Scanner userInput7= new Scanner(System.in);
+							System.out.println(" your a starter" );
+							System.out.println("its the stars game you have been selected for starter");
+							System.out.println(" your in the game you can either");
+							System.out.println("1.PLay selfish ball");
+							System.out.println("2.play conservative ball");
+							String starsGame1 = userInput7.nextLine();
+							if (starsGame1.equals("1"))
+							{
+								System.out.println(" you have a great game with 20 points 7 rebounds and 8 assists");
+								Scanner userInput8= new Scanner(System.in);
+								System.out.println(" after the game you go to a press confrence and they ask you what you will do to imporve");
+								System.out.println(" you respond");
+								System.out.println("1. Nothing");
+								System.out.println("2.everything I can");
+								String response1 = userInput8.nextLine();
+								if (response1.equals("1"))
+								{
+									System.out.println(" you have a great carrer and your jersey is retired");
+								}
+								else 
+								{
+									System.out.println(" you become an amazing player, you are inducted into the hall of fame and break the all time scoring record ");
+								}
+								
+							}
+							if (starsGame1.equals("2"))
+							{
+								System.out.println(" you have a great game with 30 points 7 rebounds and 8 assists your the MVP");
+								Scanner userInput9= new Scanner(System.in);
+								System.out.println(" after the game you go to a press confrence and they ask you what you will do to imporve");
+								System.out.println(" you respond");
+								System.out.println("1. Nothing");
+								System.out.println("2.everything I can");
+								String response2 = userInput9.nextLine();
+								if (response2.equals("1"))
+								{
+									System.out.println(" you have a great carrer and your jersey is retired and your a 3 time all star");
+								}
+								else 
+								{
+									System.out.println(" you become an amazing player, you are inducted into the hall of fame, your jersey is retired, your an 10 time all star and break the all time scoring record ");
+								}
+								
+							}
+					
+						}
+						
 				
 			
+		
+			}
+			
+		
+		public static void playingFQ()		
+
+		{
+			
+			
+		if (sportChoice.equals(2))
+				System.out.println(" Now for you playing time");
+				if (footballPosition.equals(1))
+				{
+					Scanner userInput= new Scanner(System.in);
+					System.out.println("The first string quaterback gets hurt");
+					System.out.println(" its your chance to show your coach what you can do");
+					System.out.println(" its the first play of the game you drop back and");
+					System.out.println("1.Throw deep");
+					System.out.println("2.Throw short");
+					String firstPlay = userInput.nextLine();
+					if (firstPlay.equals("1"))
+					{
+						Scanner userInput1= new Scanner(System.in);
+						System.out.println(" you complete the pass and you win the game you pass for 300 yards");
+						System.out.println(" after the game your coach aproches you and asks makes you a starter you respond");
+						System.out.println("1. Thanks coach I apreciate it  ");
+						System.out.println("2. I figured");
+						String starter = userInput1.nextLine();
+						if (starter.equals("1"))
+						{
+							Scanner userInput3= new Scanner(System.in);
+							System.out.println(" you become one of the best players in the leauge win rookie of the year and get sleected for Pro Bowl");
+							System.out.println(" you made it to the pro bowl you start the game and you have an amazing game you throw for 300 yards and have a 72 percent completion rate");
+							System.out.println(" after the Pro Bowl the press apraoches you and asks you what you will do to improve you respond");
+							System.out.println("1.Nothing");
+							System.out.println("2.everything I can");
+							String response = userInput3.nextLine();
+							if(response.equals("1"))
+							{
+								System.out.println(" you become a great player and get inducted into the hall of fame");
+							}
+							else 
+							{
+								System.out.println(" you become one of the best players break the all time passing record and getinducted into the hall of fame");
+							}
+						}
+						else 
+						{
+							Scanner userInput4= new Scanner(System.in);
+							System.out.println(" you become a good player and get selected to Pro Bowl");
+							System.out.println(" you made it to the pro Bowl and you have a good game you throw for 150 yeards and have a 45 percent completion rate ");
+							System.out.println(" after the game the press apraches you and ask you what your going to do to imporve you respond");
+							System.out.println("1. Nothing");
+							System.out.println("2. everything I can");
+							String response1 = userInput4.nextLine();
+							if (response1.equals("1"))
+							{
+								System.out.println(" You beocme a good player and make the pro bowl a couple more times");
+							}
+							else 
+							{
+								System.out.println(" you become a great player and get slecetd to the prow bowl for half the time your in the NFL");
+							}
+							
+							
+						}
+					}
+					else
+					{
+						Scanner userInput3= new Scanner(System.in);
+						System.out.println("You complete the pass and you win the game but you have a medicore performance");
+						System.out.println(" after the game the coach aproaches you abd asks you to go to a camp to get better");
+						System.out.println(" you repsond");
+						System.out.println("1.why im already the best");
+						System.out.println("2. Yes sir");
+						String camp = userInput3.nextLine();
+						if (camp.equals("1"))
+						{
+							Scanner userInput5= new Scanner(System.in);
+							System.out.println(" you stay second string untill starter gets hurt again then you get selected to Pro Bowl for a rookie");
+							System.out.println(" you made it to the pro bowl you start the game and you have a okay game you throw for 100 yards and have a 72 percent completion rate");
+							System.out.println(" after the Pro Bowl the press apraoches you and asks you what you will do to improve you respond");
+							System.out.println("1.Nothing");
+							System.out.println("2.everything I can");
+							String response2 = userInput5.nextLine();
+							if(response2.equals("1"))
+							{
+								System.out.println(" you are a second string player for the rest of your carrer");
+							}
+							else 
+							{
+								System.out.println(" you become a good player and a starter a couple of years later");
+							}
+							
+						}
+						else
+						{
+							Scanner userInput6= new Scanner(System.in);
+							System.out.println(" you get better and start by the end of the season and get selected to the Pro Bowl");
+							System.out.println(" you made it to the pro bowl you start the game and you have an amazing game you throw for 200 yards and have a 72 percent completion rate");
+							System.out.println(" after the Pro Bowl the press apraoches you and asks you what you will do to improve you respond");
+							System.out.println("1.Nothing");
+							System.out.println("2.everything I can");
+							String response3 = userInput6.nextLine();
+							if (response3.equals("1"))
+							{
+								System.out.println(" you become a good player and stay a solid starter for the rest of your carrer");
+							}
+							else 
+							{
+								System.out.println(" you improve and get sleceted to the pro bowl every year of your carrer");
+							}
+						}
+					}
+				}
+			}
+					
+		
+				
+		
+		public static void playingFO()
+		{
 			
 		}
-	
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
 		}
-		
+	
+			
+			
+			
+	
+	
+	
 	
