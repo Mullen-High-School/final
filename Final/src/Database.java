@@ -197,7 +197,7 @@ public class Database
 		{
 			contract.add("4 years 60 million ");
 			contract.add("2 years 20 million ");
-			contract.add("1 years 11 million ");
+			contract.add("1 years 12 million ");
 		}
 		
 		public static void myHouse()
@@ -205,7 +205,7 @@ public class Database
 			house.add("1.Mansion ");
 			house.add("2.Penthouse ");
 			house.add("3.Apartment ");
-			house.add("4.Condo ");
+			house.add("4.Condominium ");
 		
 		}
 		

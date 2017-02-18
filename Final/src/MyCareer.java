@@ -147,7 +147,7 @@ public class MyCareer
 			else if(hairType.equals("7"))
 				{
 					System.out.println(" ");
-					System.out.println(" What would you like your hair type to be ?");
+					System.out.println("What would you like your hair type to be ?");
 					Scanner userInput2= new Scanner(System.in);
 					String otherHairType = userInput.nextLine();
 					System.out.println(otherHairType + "is a good choice");
@@ -180,7 +180,7 @@ public class MyCareer
 				else 
 					{
 						Scanner userInput2= new Scanner(System.in);
-						System.out.println(" waht would you like your eye color to be");
+						System.out.println("What would you like your eye color to be");
 						String otherEyeColor = userInput.nextLine();
 						System.out.println(otherEyeColor + " is good!");
 					}
@@ -201,7 +201,7 @@ public class MyCareer
 		
 		public static void player()
 		{
-			System.out.println( " Here is your player ");
+			System.out.println( "Here is your player ");
 			System.out.println(" Your name is " + name);
 			System.out.println(" you are " + height + " feet tall and you way " + weight + " pounds");
 			System.out.println(" you are " + age + " years old and you were born on " + birthday );
