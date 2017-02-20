@@ -13,7 +13,6 @@ public class Database
 		static ArrayList<String> overall = new ArrayList <String>();
 		static ArrayList<String> basketballTeam = new ArrayList <String>();
 		static ArrayList<String> footballTeam = new ArrayList <String>();
-		static ArrayList<String> baseballTeam = new ArrayList <String>();
 		static ArrayList<String> house = new ArrayList <String>();
 		static ArrayList<String> contract = new ArrayList <String>();
 		static ArrayList<String> standings = new ArrayList <String>();
@@ -50,7 +49,6 @@ public class Database
 		{
 			sport.add("1.Basketball"); 
 			sport.add("2.Football");
-			sport.add("3.Baseball");
 			
 		}
 		public static void basketball()
@@ -156,42 +154,7 @@ public class Database
 			Collections.shuffle(footballTeam);
 		}
 		
-		public static void bbTeam()
-		{
-			baseballTeam.add("Baltimore Orioles ");
-			baseballTeam.add("Boston Red Sox ");
-			baseballTeam.add("Chicago White Sox ");
-			baseballTeam.add("Clevland Indians ");
-			baseballTeam.add("Detriot Tigers ");
-			baseballTeam.add("Houston Astros ");
-			baseballTeam.add("Kansas City Royals ");
-			baseballTeam.add("Los Angeles Angels ");
-			baseballTeam.add("Minnesotta Twins ");
-			baseballTeam.add("New York Yankees ");
-			baseballTeam.add("Oakland Athletics ");
-			baseballTeam.add("Seattle Mariners ");
-			baseballTeam.add("Tampa Bay Rays ");
-			baseballTeam.add("Texas Rangers ");
-			baseballTeam.add("Toronto Blue Jays ");
-			baseballTeam.add("Arizona Diamondbacks ");
-			baseballTeam.add("Atlanta Braves ");
-			baseballTeam.add("Chicago Cubs ");
-			baseballTeam.add("Cincinnati Reds ");
-			baseballTeam.add("Colorado Rockies ");
-			baseballTeam.add("Los Angeles Dodgers ");
-			baseballTeam.add("Miami Marlins ");
-			baseballTeam.add("Milwaukee Brewers ");
-			baseballTeam.add("New York Mets ");
-			baseballTeam.add("Philadelphia Phillies ");
-			baseballTeam.add("Pitsburg Pirates ");
-			baseballTeam.add("Sand Diego Padres ");
-			baseballTeam.add("San Fransisco Giants ");
-			baseballTeam.add("St.Louis Cardinals ");
-			baseballTeam.add("Washington Nationals ");
-			Collections.shuffle(baseballTeam);
-			
-			
-		}
+		
 
 		public static void myContract()
 		{

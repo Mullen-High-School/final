@@ -8,11 +8,10 @@ public class MyPlayer
 		private String eyeColor;
 		private String positionB;
 		private String positionF;
-		private String positionBB;
+
 		private String overall;
 		private String basketballTeam;
 		private String footballTeam;
-		private String baseballTeam;
 		private String house; 
 		private String contract; 
 		private String standings; 
@@ -20,7 +19,7 @@ public class MyPlayer
 		
 
 	
-public MyPlayer (String s, String hc, String ht, String ec,String b,String f, String bb, String o,String bt, String ft, String bbt,String h,String c, String st, String e)
+public MyPlayer (String s, String hc, String ht, String ec,String b,String f,  String o,String bt, String ft,String h,String c, String st, String e)
 {
 	sport = s;
 	hairColor = hc;
@@ -28,11 +27,9 @@ public MyPlayer (String s, String hc, String ht, String ec,String b,String f, St
 	eyeColor = ec;
 	positionB = b; 
 	positionF = f;
-	positionBB = bb;
 	overall = o; 
 	basketballTeam = bt; 
 	footballTeam = ft;
-	baseballTeam = bbt;
 	house = h;
 	contract = c;
 	standings = st;
@@ -115,17 +112,6 @@ public void setPositionF(String positionF) {
 
 
 
-public String getPositionBB() {
-	return positionBB;
-}
-
-
-
-public void setPositionBB(String positionBB) {
-	this.positionBB = positionBB;
-}
-
-
 
 public String getOverall() {
 	return overall;
@@ -159,18 +145,6 @@ public String getFootballTeam() {
 
 public void setFootballTeam(String footballTeam) {
 	this.footballTeam = footballTeam;
-}
-
-
-
-public String getBaseballTeam() {
-	return baseballTeam;
-}
-
-
-
-public void setBaseballTeam(String baseballTeam) {
-	this.baseballTeam = baseballTeam;
 }
 
 
