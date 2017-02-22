@@ -67,9 +67,7 @@ public class Database
 			positionF.add("4.Tight End");
 			positionF.add("5.Cornerback");
 			positionF.add("6.Linebacker");
-			positionF.add("7.Defensive Tackle");
-			positionF.add("8.Defensive End");
-			positionF.add("9.Saftey");
+			positionF.add("7.Saftey");
 		}
 		
 		public static void baseball()
